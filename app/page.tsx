@@ -1,8 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 export default function Home() {
   return (
     <div>
-      <Button size="sm" variant={"default"} className="bg-purple-500 text-lg">Signin</Button>
+      <div className="flex flex-col gap-y-3">
+          <div>
+            login sucessfull welcome back
+          </div>
+          <div>
+            <UserButton />
+          </div>
+      </div>
     </div>
   );
 }
