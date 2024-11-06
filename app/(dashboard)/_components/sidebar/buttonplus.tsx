@@ -6,6 +6,7 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog"
 import { CreateOrganization } from "@clerk/clerk-react";
+import { Hint } from "../ui/hint";
   
 export const Buttonadduser = ()=>{
     return(
@@ -13,9 +14,14 @@ export const Buttonadduser = ()=>{
             <Dialog>
             <DialogTrigger asChild >
                 <div className="aspect-square">
+                    <Hint label="Create organinzation"
+                    side="right"
+                    align="center"
+                    sideoffset={18}>
                     <button className="bg-white/25 p-2 rounded-md  opacity-100 hover:opacity-80 transition">
                         <FaPlus  className="text-white"/>
                     </button>
+                    </Hint>
                 </div>
             </DialogTrigger>
             <DialogContent className="p-5 bg-transparent border-none text-white">
